@@ -3,40 +3,29 @@
     <div class="container">
         <div class="tour__grid">
             <div class="tour__left">
-                <div class="slider-for">
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2023/05/hinh-thuc-te-tour-phuong-hoang-co-tran-5.png" alt=""></div>
+                <div class="" style="position: relative">
+                    <div class="slider-for">
+                        <?php
+                        $data = array(
+                            'https://tourhot24h.vn/wp-content/uploads/2023/05/hinh-thuc-te-tour-phuong-hoang-co-tran-5.png',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/phuong-hoang-co-tran-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/lau-hong-kieu-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/thanh-lau-dong-mon-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/dao-thuyen-ho-bao-phong-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/show-rang-ro-tuong-tay-1-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/show-thien-co-tinh-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/cong-vien-truong-gia-gioi-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/truong-gia-gioi-1-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/cau-kinh-dai-hiep-coc-710x533.jpg',
+                            'https://tourhot24h.vn/wp-content/uploads/2019/09/trai-nghiem-thuc-te-ao-vr-360-do-710x533.jpg',
+                        );
+                        foreach ($data as $k=>$v): ?>
+                            <div>
+                                <div data-fancybox="gallery" href="<?= $v ?>"><img src="<?= $v ?>" alt=""></div>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/phuong-hoang-co-tran-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/lau-hong-kieu-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/thanh-lau-dong-mon-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/dao-thuyen-ho-bao-phong-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/show-rang-ro-tuong-tay-1-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/show-thien-co-tinh-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/cong-vien-truong-gia-gioi-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/truong-gia-gioi-1-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/cau-kinh-dai-hiep-coc-710x533.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <div><img src="https://tourhot24h.vn/wp-content/uploads/2019/09/trai-nghiem-thuc-te-ao-vr-360-do-710x533.jpg" alt=""></div>
-                    </div>
+                    <a href="" data-fancybox class="tour__zoom"><i class="icon-expand"></i></a>
                 </div>
                 <div class="slider-nav">
                     <div class="slider-nav__column">

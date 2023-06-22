@@ -512,5 +512,10 @@
         focusOnSelect: true
     });
 </script>
+<script>
+    Fancybox.bind('[data-fancybox]', {
+        //
+    });
+</script>
 </body>
 </html>
