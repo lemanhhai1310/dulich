@@ -101,10 +101,73 @@ i[class^="icon-"]{
         }
       }
       .button{
+        position: relative;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-size: .97em;
+        letter-spacing: .03em;
+        cursor: pointer;
+        font-weight: bolder;
+        text-align: center;
+        color: currentColor;
+        text-decoration: none;
+        border: 1px solid transparent;
+        vertical-align: middle;
+        border-radius: 0;
+        margin-top: 0;
+        margin-right: 1em;
+        text-shadow: none;
+        //line-height: 2.4em;
+        min-height: 2.5em;
+        padding: 0 1.2em;
+        max-width: 100%;
+        -webkit-transition: border .3s,background .3s,opacity .3s,color .3s,-webkit-transform .3s,-webkit-box-shadow .3s;
+        transition: border .3s,background .3s,opacity .3s,color .3s,-webkit-transform .3s,-webkit-box-shadow .3s;
+        -o-transition: transform .3s,border .3s,background .3s,box-shadow .3s,opacity .3s,color .3s;
+        transition: transform .3s,border .3s,background .3s,box-shadow .3s,opacity .3s,color .3s;
+        transition: transform .3s,border .3s,background .3s,box-shadow .3s,opacity .3s,color .3s,-webkit-transform .3s,-webkit-box-shadow .3s;
+        text-rendering: optimizeLegibility;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        &.facebook{
+          color: #3a589d!important;
+          background-color: currentColor!important;
+          border-color: currentColor!important;
+        }
+        &.twitter{
+          color: #2478ba!important;
+        }
+        &.pinterest{
+          color: #cb2320!important;
+        }
+        &.linkedin{
+          color: #0072b7!important;
+        }
+        &.tumblr{
+          color: #36455d!important;
+        }
+        &.circle{
+          border-radius: 999px!important;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
         &.tooltip{
           opacity: 1;
         }
         &.icon{
+          margin-left: 0.12em;
+          margin-right: 0.12em;
+          min-width: 2.5em;
+          padding-left: 0.6em;
+          padding-right: 0.6em;
+          display: inline-block;
           &.circle{
             padding-left: 0;
             padding-right: 0;
@@ -113,10 +176,14 @@ i[class^="icon-"]{
             background-color: currentColor!important;
             border-color: currentColor!important;
           }
+          >i{
+            font-size: 1.2em;
+            color: #fff;
+          }
         }
         &.facebook{
           &:not(.is-outline){
-            olor: #3a589d!important;
+            color: #3a589d!important;
           }
         }
       }
